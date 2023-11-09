@@ -1,0 +1,44 @@
+<html>
+		<head>
+			<title>Update</title>
+		</head>
+		<body bgcolor="NavyBlue">
+			<h1>Update Task</h1>
+			<form method="POST" action="/update/{{d.0}}">
+				<table>
+					<tr><td>FirstName:</td><td><input type="text" name="firstname" value="{{d.1}}" /></td></tr>
+					<tr><td>LastName:</td><td><input type="text" name="lastname" value="{{d.2}}" /></td></tr>
+				</table>
+				<label for="Select Gender">Gender</label>
+				<select name="gender" id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Others">Others</option>
+				</select>
+
+				<!-- <table>
+					<tr><td>CountryCode:</td><td><input type="text" name="CountryCode" value="+91" readonly /></td></tr>
+				</table> -->
+				<label for="Select CountryName">CountryName</label>
+				<select name="countryname" id="country">
+					<option value="India">India</option>
+					<option value="Srilanka">Srilanka</option>
+					<option value="America">America</option>
+					<option value="Japan">Japan</option>
+				</select>
+				
+
+                <table>
+					<tr><td>PhoneNumber:</td><td><input type="text" name="PhoneNumber" value="{{d.5}}" maxlength="10" /></td></tr>
+					<tr><td>Date:</td><td><input type="date" name="date" value="{{d.6}}" /></td></tr>
+				</table>
+				
+
+				<table>
+
+
+                    <tr><td></td><td><input type="submit" name="send" value="Update" /></td></tr>
+				</table>
+			</form>
+		</body>
+</html>

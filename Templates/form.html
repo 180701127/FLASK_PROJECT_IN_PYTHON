@@ -1,0 +1,50 @@
+<html>  
+	<head>
+		<title>ToDO App</title>
+	</head>
+	<body bgcolor="Yellow">
+		<h1>Create task</h1>
+		<form method="POST" action="/store">
+			<table>
+				<tr><td>FirstName<input type="text" name="firstname"></td></tr>
+				<tr><td>LastName<input type="text" name="lastname"></td></tr>
+			</table>
+
+
+			<label for="Select Gender">Gender</label>
+			<select name="gender" id="gender">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Others">Others</option>
+			</select>
+
+			<!-- <table>
+
+				<tr><td>CountryCode</td><td><input type="text" name="countrycode" value="+91" readonly /></td></tr>
+			</table> -->
+
+			<label for="Select CountryName">Country</label>
+			<select name="countryname" id="countryn">
+				<option value="India">India</option>
+				<option value="Srilanka">Srilanka</option>
+				<option value="America">America</option>
+				<option value="Japan">Japan</option>
+			</select>
+
+			<table>
+				<tr><td>PhoneNumber</td><td><input type="text" name="PhoneNumber" maxlength="10" /></td></tr>
+				<tr><td>DATE</td> <td><input type="date" name="date"></td></tr>
+			</table>
+
+			
+			<table>
+
+			   <tr><td></td><td><input type="submit" name="send" value="Create"></td></tr>
+			</table>
+		</form>
+	</body>	
+   
+  
+
+   
+</html>
